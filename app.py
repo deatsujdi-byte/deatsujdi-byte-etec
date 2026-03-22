@@ -1,6 +1,0 @@
-nome = input("Qual aparelho gostaria de verificar?")
-watts = input("Qual a potencia do aparelho? Em Watts.")
-tempo = input("Qual o tempo de uso diario?")
-consumo = float((float(watts)*float(tempo)*30)/1000)
-gasto = float(float(consumo)*0.75)
-print(f"O seu aparelho {nome} consome em média {consumo}kWh/mês e totaliza um gasto mensal de {gasto} reais")
