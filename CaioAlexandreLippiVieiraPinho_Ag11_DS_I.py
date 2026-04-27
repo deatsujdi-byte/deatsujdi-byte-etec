@@ -11,3 +11,4 @@ elif nivel_agua > 60 and nivel_agua <= 80:
     print(Fore.CYAN + "Nivel 4: O reservatorio está em nivel alto")
 elif nivel_agua > 80:
     print(Fore.BLUE + "Nivel 5: O reservatório está em nivel muito alto (Alerta)")
+print(Style.RESET_ALL)
