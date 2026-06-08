@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TecnoNexus - Soluções Digitais</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .w3-tecnonexus { background-color: #0b3d91; color: #ffffff; }
+    .w3-section p { line-height: 1.8; }
+    /* Sidebar styles */
+    .sidebar a { display: block; padding: 12px 16px; color: #000; text-decoration: none; }
+    .sidebar a .fa-solid { margin-right: 8px; }
+    .slide { display: none; }
+    .slideshow-container { position: relative; }
+    .prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 8px; margin-top: -22px; color: white; font-weight: bold; font-size: 18px; border-radius: 0 3px 3px 0; user-select: none; background: rgba(0,0,0,0.5); }
+    .next { right: 0; border-radius: 3px 0 0 3px; }
+    .dot { cursor: pointer; height: 12px; width: 12px; margin: 0 4px; background-color: #bbb; border-radius: 50%; display: inline-block; }
+    .active-dot { background-color: #717171; }
+  </style>
+</head>
+<body class="w3-light-grey">
+
+  <header class="w3-container w3-tecnonexus w3-padding-32 w3-center">
+    <h1 class="w3-jumbo">TecnoNexus</h1>
+    <p class="w3-xlarge">Inovação digital, projetos com propósito</p>
+  </header>
+
+  <div class="w3-content w3-padding-64" style="max-width:1200px;">
+    <div class="w3-row">
+      <!-- Sidebar -->
+      <nav class="w3-col l3 m4 w3-white w3-card sidebar">
+        <div class="w3-container w3-padding-16 w3-center">
+          <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Logo" style="width:64px;border-radius:50%">
+          <h4>TecnoNexus</h4>
+          <p class="w3-small">Soluções Digitais</p>
+        </div>
+        <a href="#empresa"><i class="fa-solid fa-building"></i> Empresa</a>
+        <a href="#produtos"><i class="fa-solid fa-box-open"></i>Produtos</a>
+        <a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfólio</a>
+        <a href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a>
+      </nav>
+
+      <!-- Main content -->
+      <main class="w3-col l9 m8 w3-rest">
+
+        <section id="empresa" class="w3-row-padding w3-margin-bottom">
+          <div class="w3-card w3-white w3-padding-large">
+            <h2>Quem Somos</h2>
+            <p>A TecnoNexus é uma empresa fictícia.</p>
+          </div>
+        </section>
+
+        <!-- Produtos (slideshow) -->
+        <section id="produtos" class="w3-row-padding w3-margin-bottom">
+          <div class="w3-card w3-white w3-padding-large">
+            <header class="w3-container w3-center">
+              <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Logotipo" style="width:100px">
+              <h2>Produtos</h2>
+            </header>
+
+            <div class="w3-row-padding">
+              <div class="w3-half">
+                <div class="slideshow-container">
+                  <div class="slide w3-display-container">
+                    <img src="https://www.w3schools.com/w3images/tech.jpg" style="width:100%" alt="Produto 1">
+                    <div class="w3-display-bottomleft w3-black w3-padding">Plataforma de e-commerce</div>
+                  </div>
+                  <div class="slide w3-display-container">
+                    <img src="https://www.w3schools.com/w3images/laptops.jpg" style="width:100%" alt="Produto 2">
+                    <div class="w3-display-bottomleft w3-black w3-padding">Aplicativos sob medida</div>
+                  </div>
+                  <div class="slide w3-display-container">
+                    <img src="https://www.w3schools.com/w3images/phone.jpg" style="width:100%" alt="Produto 3">
+                    <div class="w3-display-bottomleft w3-black w3-padding">Consultoria em UX/UI</div>
+                  </div>
+
+                  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center; margin-top:8px">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <label class="w3-small"><input type="checkbox" id="autoplay" checked> Auto-play</label>
+              </div>
+
+              <div class="w3-half">
+                <h3>O que oferecemos</h3>
+                <p><strong>Plataformas de E-commerce:</strong> Loja online completa.</p>
+                <p><strong>Aplicativos:</strong> Soluções mobile e web.</p>
+                <p><strong>Design e Experiência:</strong> Identidade visual.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio" class="w3-row-padding w3-margin-bottom">
+          <div class="w3-card w3-white w3-padding">
+            <h2>Portfólio</h2>
+            <div class="w3-row-padding">
+              <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container">
+                  <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Projeto 1" style="width:100%">
+                  <div class="w3-display-bottomleft w3-black w3-padding">Plataforma de vendas</div>
+                </div>
+              </div>
+              <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container">
+                  <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Projeto 2" style="width:100%">
+                  <div class="w3-display-bottomleft w3-black w3-padding">Site institucional</div>
+                </div>
+              </div>
+              <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container">
+                  <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Projeto 3" style="width:100%">
+                  <div class="w3-display-bottomleft w3-black w3-padding">Campanha digital</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+    <section id="contato" class="w3-row-padding w3-margin-bottom">
+      <div class="w3-card w3-white w3-padding">
+        <h2>Contato</h2>
+        <p><strong>Telefone:</strong> (12) 6767-0420</p>
+        <p><strong>E-mail:</strong> contato@tecnonexus.com.br</p>
+        <p><strong>Endereço:</strong> Inexistente</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="w3-container w3-tecnonexus w3-padding-24">
+    <div class="w3-row">
+      <div class="w3-col s12 m6 w3-center">
+        <h4>TecnoNexus</h4>
+        <p>© 2026 TecnoNexus - Soluções Digitais</p>
+      </div>
+      <div class="w3-col s12 m6 w3-center">
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:contato@tecnonexus.com.br" style="color:inherit">contato@tecnonexus.com.br</a> &nbsp; <i class="fa-solid fa-phone"></i> <a href="tel:+111111111" style="color:inherit">(12) 6767-0420</a></p>
+        <p>
+          <a href="https://facebook.com" target="_blank" style="color:inherit; margin-right:8px"><i class="fa-brands fa-facebook fa-lg"></i></a>
+          <a href="https://instagram.com" target="_blank" style="color:inherit; margin-right:8px"><i class="fa-brands fa-instagram fa-lg"></i></a>
+          <a href="https://linkedin.com" target="_blank" style="color:inherit"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    let slideInterval = null;
+    const showSlide = (n) => {
+      const slides = document.getElementsByClassName('slide');
+      const dots = document.getElementsByClassName('dot');
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
+      for (let i = 0; i < slides.length; i++) slides[i].style.display = 'none';
+      for (let i = 0; i < dots.length; i++) dots[i].className = dots[i].className.replace(' active-dot', '');
+      slides[slideIndex-1].style.display = 'block';
+      if (dots[slideIndex-1]) dots[slideIndex-1].className += ' active-dot';
+    }
+    const changeSlide = (n) => { showSlide(slideIndex += n); }
+    const currentSlide = (n) => { showSlide(slideIndex = n); }
+    const startAuto = () => {
+      const autoplay = document.getElementById('autoplay');
+      if (autoplay && autoplay.checked) {
+        slideInterval = setInterval(() => { changeSlide(1); }, 4000);
+      }
+    }
+    const stopAuto = () => { if (slideInterval) clearInterval(slideInterval); slideInterval = null; }
+
+    document.addEventListener('DOMContentLoaded', function(){
+      showSlide(slideIndex);
+      startAuto();
+      const autoplay = document.getElementById('autoplay');
+      if (autoplay) autoplay.addEventListener('change', function(){
+        if (this.checked) startAuto(); else stopAuto();
+      });
+    });
+  </script>
+
+</body>
+</html>
