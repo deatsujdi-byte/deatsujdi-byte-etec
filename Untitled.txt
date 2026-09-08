@@ -1,0 +1,19 @@
+Relatório de infraestrutura de rede:
+1) Levantamento das necessidades
+A loja terá 5 computadores, 2 impressoras de rede, 2 impressoras fiscais e internet de fibra. O foco aqui seria ter a rede totalmente segura e organizada para evitar problemas durante o uso do estoque e/ou emissões de notas fiscais. Um dos cuidados seria ter o wi-fi dos clientes separado dos funcionarios, assim todos os clientes podem usar a internet sem ter acesso aos computadores da loja.
+
+2) Topologia estrela
+Com isso todos os devices ficam ligados a um switch central, que facilitar organização e manutenção da rede. Se algum computador der problema, todos os outros continuam funcionando normalmente.
+
+3) Equipamentos Necessários
+* Roteador: Recebe internet, e distribui entre o resto dos aparelhos
+* Switch: Conecta todos os computadores e impressoras
+* Um ponto de acesso Wi-Fi: Para fornecer internet a loja toda
+* Um Rack: Para organização
+* Fonte Nobreak: Para segurança no caso de quedas e oscilações de energia
+
+4) Plano de Expansão
+A rede pode, e deve, ser montada já pensando num possivel crescimento da loja, para isso usaremos um switch com portas adicionais. Tambem já deixaremos pontos de rede preparados para instalações futuras, novos computadores e/ou impressoras.
+
+5) Desenho da rede
+Checar imagem anexa.
